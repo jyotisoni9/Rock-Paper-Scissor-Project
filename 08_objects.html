@@ -1,0 +1,83 @@
+ <!DOCTYPE html>
+ <html>
+<head>
+ <title>objects</title>
+</head>
+<body>
+  
+  <script>
+  /* const product = {
+    name : 'socks',
+    price : 1090
+   };
+
+   console.log(product);
+   console.log(product.name);
+   product.name = 'cotton socks';
+   console.log(product);
+   
+ const product2 = {
+  name : 'shirt',
+  'delivery-time' : '1 days',
+  rating : {
+    stars : 4.5,
+    count : 87
+  },
+  fun: function function1(){
+    console.log('function inside objects');
+  }
+ };
+
+ console.log(product2);
+ console.log(product2.name);
+ console.log(product2.rating.count);
+ console.log(product2['name']);
+ console.log(product2['delivery-time']);
+ product2.fun();
+
+ console.log(JSON.stringify(product2));
+ const jsonString = JSON.stringify(product2);
+ console.log(JSON.parse(jsonString));
+ */
+
+  const obj1 = {
+    message: 'hello',
+  };
+  const obj2 = obj1;
+
+  obj1.message = 'Good job';
+  console.log(obj2);
+
+  console.log(obj2 === obj1);
+  const obj3 = {
+    message : 'hello',
+  };
+  console.log(obj3 === obj1);
+
+   const obj4 = {
+    message : 'hii',
+    price : 799
+  };
+ // const message = obj4.message;
+  const {message,price}=obj4; //destructing shortcut
+  console.log(message);
+   console.log(price);
+
+   const obj5={
+   // message:message
+   message, // shorthand property
+
+  /* method: function fun1(){
+    console.log('whatever');
+   }*/
+  method(){
+    console.log('Whatever'); //shorthand method shortcut
+  }
+   };
+
+   console.log(obj5); //it gives that message = hii value bcoz we have set a variable message = hii.
+   obj5.method();
+   
+ </script>
+</body> 
+</html>
